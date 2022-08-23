@@ -13,6 +13,28 @@ void Create() {
         cout<<a[i]<<" ";
         }
 
+
+
+
+void Searching() {
+	    int n;
+        cout<<"Enter the size of the Array : \n";
+        cin>>n;
+        int a[n];
+        for (int i=0; i<=(n-1); i++) {
+        cin>>a[i];
+        }
+        for (int i=0; i<=(n-1); i++) {
+        cout<<a[i]<<" "; }
+        cout<<"\nEnter the number for searching :";
+        int z;
+        cin>>Z;
+        for (int i=0; i<=(n-1); i++) {
+        if ( a[i] = z )  {
+		
+       	cout<<"The number is found";
+	   }
+        }
 }
 
 void Swapping () {
@@ -24,15 +46,13 @@ void Swapping () {
         cin>>n;
         cout<<"\n";
          
-        for (int i=0; i<=n-1; i++) {
-            cin>>a[i];
-        }
+        for (int i=0; i<=n-1; i++) 
         
         for (int i=0; i<=n-1; i++) {
             cout<<a[i]<<" ";
         }
          
-        cout<<"After Swapping \n";
+        cout<<"\nAfter Swapping \n";
         
 	    for(int i=0 ; i<(n-1)/2 ; i++) {
 		    num = a[i];	    
@@ -49,9 +69,9 @@ void Swapping () {
 int main() {
     cout<<"ARRAY OPERATIONS :\n";
     cout<<"1. Create\n";
-    cout<<"4. Insert\n";
+    cout<<"2. Insert\n";
     cout<<"3. Delete\n";
-    cout<<"2. Swapping\n";
+    cout<<"4. Swapping\n";
     cout<<"5. Searching\n";
  
     cout<<"Enter the number of operation to be performed";
@@ -65,13 +85,14 @@ int main() {
     Create();
     break;
     
-    case 2 : 
+    case 4: 
     Swapping();
 	break;
 	
-    case 3 : 
-     
+    case 5 : 
+    Searching();
     break;
+    
     }
 
     return 0;
